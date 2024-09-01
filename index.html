@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike | Clone</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/images/fevicon/nike-128.webp">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              animation:{
+                "anime": "anime 20s linear infinite",
+                "anime2": "anime 14s linear infinite",
+              },
+              keyframes:{
+                "anime":{
+                    from:{transform:"translateX(0)"},
+                    to:{transform:"translateX(-100%)"},
+                },
+                "anime2":{
+                    from:{transform:"translateX(0)"},
+                    to:{transform:"translateX(-100%)"},
+                },
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-100 overflow-x-hidden">
+    <header class=" hidden h-10 lg:flex items-center justify-between px-10">
+        <img src="./Assets/images/logo/pngwing.com (1).png" class="w-7 ml-5" alt="">
+        <div class="flex justify-between items-center h-full">
+            <a href="#" class="text-xs font-bold border-r-2 border-black px-4 hover:text-gray-500">Find a Store</a>
+            <a href="#" class="text-xs font-bold border-r-2 border-black px-4 hover:text-gray-500">Help</a>
+            <a href="#" class="text-xs font-bold border-r-2 border-black px-4 hover:text-gray-500">Join Us</a>
+            <a href="http://127.0.0.1:5501/Nike-Clone/index2.html" class="text-xs font-bold border-r-2 border-black px-4 hover:text-gray-500">Sign In</a>
+        </div>
+    </header>
+    <header class="h-14 w-full flex items-center justify-between px-6 lg:h-16 lg:px-10 bg-white">
+        <img src="./Assets/images/logo/nikelogo.png" class="w-1/5 lg:w-[5%] md:w-[8%] sm:w-24" alt="">
+        <nav class="w-3/5 flex justify-between items-center h-full lg:hidden md:w-[30%] sm:w-44">
+            <a href="#"><i class="ri-search-2-line text-[18px] "></i></a>
+            <a href="#"><i class="ri-shopping-bag-line text-[18px] "></i></a>
+            <a href="#"><i class="ri-user-3-line text-[18px] "></i></a>
+            <a href="#"><i class="ri-menu-fill text-[18px] "></i></a>
+        </nav>
+        <nav class="hidden lg:flex justify-between items-center space-x-8">
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">New & Featured</a>
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">Men</a>
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">Women</a>
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">Kids</a>
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">Sale</a>
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">Customise</a>
+            <a href="#" class="text-base font-medium border-black pb-2 hover:border-b-2">SNKRS</a>
+        </nav>
+        <div class=" hidden lg:flex text-center justify-between gap-2">
+            <div class="bg-gray-100 flex rounded-3xl w-32 hover:bg-gray-200">
+                <i class="ri-search-2-line text-2xl font-medium px-2 py-1 rounded-full hover:bg-gray-300"></i>
+                <input type="text"placeholder="Search" class="px-2 py-2 w-32 bg-transparent outline-0 ">
+            </div>
+            <i class="ri-heart-line text-2xl font-medium place-self-center px-2 py-1 rounded-full hover:bg-gray-200"></i>
+            <i class="ri-shopping-bag-line text-2xl font-medium place-self-center px-2 py-1 rounded-full hover:bg-gray-200"></i>
+        </div>
+    </header>        
+    <div class=" text-center h-28 w-full mt-4">
+        <h2 class="text-[18px] tracking-tight font-medium">Move, Shop, Customise & Celebrate With Us.</h2>
+        <p class="text-[12px] px-6 font-medium">No matter what you feel like doing today.It's better as a Member.</p>
+        <a class="hover:underline font-medium" href="#">Join us</a>
+    </div>  
+    <img class="mb-6 lg:hidden md:hidden sm:w-screen" src="./Assets/images/mob-banner/b-1.png" alt="#">
+    <img class=" hidden lg:mb-10 lg:block md:mb-10 md:block" src="./Assets/images/banners/b1.png" alt="#">
+
+    <div class="mb-6 w-full px-6 text-left space-y-6 flex flex-col justify-between md:text-center">
+        <div>
+            <h2 class="text-lg font-medium lg:mb-2">Arriving March 26th</h2>
+            <h1 class="font-extrabold text-[2.94rem] tracking-tighter leading-10 lg:text-[4.6rem]">NIKE AIR MAX DN</h1>
+        </div>
+        <p class="text-lg">Welcome to the next generation of Air tectnology.</p>
+        <button class="bg-black text-white font-medium py-2 rounded-full w-[42%] hover:bg-gray-800 lg:w-[10%] md:self-center md:w-[13%] sm:w-32">Get Notified</button>
+    </div>
+    <div>
+        <h2 class="px-6 font-normal text-2xl mb-6 lg:pl-10 lg:font-bold">Featured</h2>
+        <img class="mb-6 md:hidden sm:w-screen" src="./Assets/images/mob-banner/b-2.png" alt="">
+        <img class="mb-6 hidden md:block" src="./Assets/images/banners/b2.png" alt="">
+    </div>
+    <div class="mb-10 w-full px-6 text-left spacing-y-4 flex flex-col justify-between md:text-center">
+        <h1 class="font-extrabold mb-6 text-[2.94rem] tracking-tighter leading-10 lg:text-[4.6rem]">GIVE THE PERFECT GIFT</h1>
+        <p class="text-lg mb-6">Find the perfect pair for you and yours this Valentine's Day.</p>
+        <button class="bg-black text-white font-medium py-2 rounded-full w-[42%] hover:bg-gray-800 md:w-[10%] md:self-center sm:w-32">Shop</button>
+    </div>
+    <div class="w-full mt-14">
+        <div class="w-full flex text-center justify-between px-6">
+            <h2 class="font-medium text-2xl tracking-tight lg:font-bold lg:pl-8">Gifts for You & Yours</h2>
+            <a class="text-lg lg:pr-10 lg:font-medium" href="#">Shop</a>
+        </div>
+        <div class="flex max-w-full p-4 flex-nowrap whitespace-nowrap overflow-hidden gap-6 mb-10 ">
+            <div class="flex  h-full gap-6 animate-anime shrink-0">2
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img1.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Women's Boxy T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $85</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img2.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $75</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img3.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Court Vison Low</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $185</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img4.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Court Legacy Lift</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $195</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img5.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Air Max SC</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $223</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img6.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Air Force 1'07</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $235</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img7.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Long-Sleeve T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $85</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img8.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Older Kid's T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $65</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img9.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear Club Fleece</h2>
+                        <h3>Girl's Oversized<br>Crew-Neck Sweetshirt</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $250</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img10.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Older Kid's T-Shirt</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $85</h2>
+                </div>
+            </div>
+
+            <div class="flex  h-full gap-6 animate-anime shrink-0">
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img1.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Women's Boxy T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $85</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img2.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $75</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img3.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Court Vison Low</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $185</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img4.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Court Legacy Lift</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $195</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img5.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Air Max SC</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $223</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img6.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Air Force 1'07</h2>
+                        <h3>Women's Shoes</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $235</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img7.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Long-Sleeve T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $85</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img8.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Older Kid's T-Shirts</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $65</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img9.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear Club Fleece</h2>
+                        <h3>Girl's Oversized<br>Crew-Neck Sweetshirt</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $250</h2>
+                </div>
+                <div class="group hover:cursor-pointer ">
+                    <img loading="lazy" src="./Assets/images/top-sccroll/img10.png" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                    <div class="mb-2">
+                        <h2 class="font-medium group-hover:text-lg">Nike Sportswear</h2>
+                        <h3>Older Kid's T-Shirt</h3>
+                    </div>
+                    <h2 class="font-medium group-hover:text-lg">MRP: $85</h2>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div>
+        <h2 class="px-6 font-medium text-2xl mb-6 t-6  lg:font-bold lg:pl-10">Trending</h2>
+        <video src="./Assets/videos/v2.mp4" loop autoplay muted></video>
+    </div>
+    <div class=" mb-10 w-full px-6 text-left spacing-y-4 flex flex-col justify-between md:text-center ">
+        <div class="mt-6"> 
+            <h2 class="text-lg font-medium md:mb-2">Nike Zenvy Collection</h2>
+            <h1 class="font-extrabold text-[2.5rem] tracking-tighter leading-10 lg:text-[4.6rem]">FIND YOUR SOFT</h1>
+        </div>
+            <p class="text-lg mt-6 mb-6">Feel what long-living softness really means thanks to InfinaSoft fabric.</p>
+        <button class="bg-black text-white font-medium py-2 rounded-full w-[70%] hover:bg-gray-800 lg:w-[14%] md:w-[23%] md:self-center sm:w-48">Shop Zenvy Collection</button>
+    </div>
+    <div class="w-full mt-14 lg:pl-5">
+        <h2 class="font-medium text-2xl tracking-tighter px-6 mb-6 lg:font-bold lg:pl-10">The Latest</h2>
+        <div class="flex w-screen overflow-auto space-x-2 overflow-y-hidden">
+            <div class="h-[72vh] lg:h-[85vh] md:w-auto w-screen shrink-0 relative sm:w-96">
+                <img src="./Assets/images/grid-sec/img1.png" class="h-full w-full object-center" alt="">
+                <div class=" h-[28%] absolute bottom-0 w-full ">
+                    <h2 class="font-medium px-6 py-6 text-2xl text-black">Usher in the New Year</h2>
+                    <button class="px-6 rounded-full text-lg font-medium border-2 ml-6 border-black hover:bg-gray-100">Shop</button>
+                </div>
+            </div>    
+            <div class="h-[72vh] lg:h-[85vh] md:w-auto w-screen shrink-0 relative sm:w-96">
+                <img src="./Assets/images/grid-sec/img2.png" class="h-full w-full objecct-center" alt="">
+                <div class=" h-[28%] absolute bottom-0 w-full">
+                    <h2 class="font-medium px-6 py-6 text-2xl text-white">Hetro Running Shooes</h2>
+                    <button class="px-6 rounded-full text-lg text-white font-medium border-2 ml-6 border-white hover:bg-black">Shop</button>
+                </div>
+            </div>
+            <div class="h-[72vh] lg:h-[85vh] md:w-auto w-screen shrink-0 relative sm:w-96">
+                <img src="./Assets/images/grid-sec/img3.png" class="h-full w-full objecct-center" alt="">
+                <div class=" h-[28%] sm:h-40 absolute bottom-0 w-full ">
+                    <h2 class="font-medium px-6 py-3 text-2xl text-white">Nike Calm:Slide In and Check Out</h2>
+                    <button class="px-6 rounded-full text-lg text-white font-medium border-2 ml-6 border-white hover:bg-slate-900">Shop</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="w-full mt-14">
+        <h2 class="font-medium text-2xl tracking-tighter px-6 mb-6 lg:pl-10 lg:font-bold">Just In</h2>
+        <img src="./Assets/images/mob-banner/b-3.jpg" class="md:hidden sm:w-screen" alt="">
+        <img src="./Assets/images/banners/B3.png" class="md:block hidden" alt="">
+    </div>
+    <div class="mb-10 w-full px-6 text-left spacing-y-4 flex flex-col justify-between mt-6 md:text-center">
+        <h1 class="font-extrabold text-[2.8rem] tracking-tighter leading-10 mb-6 lg:text-[4.6rem]">NIKE G.T.CUT 3 'SISTERHOOD'</h1>
+        <p class="text-lg mb-6">Inspiring by the bond WNBA hoopers share, the 'Sisterhood' colorway was created for those constantly improving their skills and changing the game.</p>
+        <button class="bg-black text-white font-medium py-2 rounded-full w-[42%] hover:bg-gray-800 lg:w-[10%] md:w-[13%] md:self-center sm:w-36">Shop Now</button>
+    </div>
+    <div class="w-full mt-14 ">
+        <h2 class="font-medium text-2xl tracking-tighter px-6 mb-6 lg:pl-10 lg:font-bold">Always Iconic</h2>
+        <div class="flex max-w-full p-4 flex-nowrap whitespace-nowrap overflow-hidden gap-6 mb-10">
+        <div class="flex  h-full gap-6 animate-anime2 shrink-0">
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i1.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">         
+                <h2 class="font-medium group-hover:text-lg">Air Force 1</h2>
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i3.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#"> 
+                 <h2 class="font-medium group-hover:text-lg">Air Jordan 1</h2> 
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i4.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">             
+                <h2 class="font-medium group-hover:text-lg">Air Max</h2> 
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i5.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                <h2 class="font-medium group-hover:text-lg">Dunk</h2>                   
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i6.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                <h2 class="font-medium group-hover:text-lg">Nike Blazer</h2>
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i7.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                <h2 class="font-medium group-hover:text-lg">Metcon</h2>
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i8.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">       
+                <h2 class="font-medium group-hover:text-lg">Pegasus Running Shoes</h2>
+            </div>
+        </div>
+        <div class="flex  h-full gap-6 animate-anime2 shrink-0">
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i1.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">         
+                <h2 class="font-medium group-hover:text-lg">Air Force 1</h2>
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i3.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#"> 
+                 <h2 class="font-medium group-hover:text-lg">Air Jordan 1</h2> 
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i4.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">             
+                <h2 class="font-medium group-hover:text-lg">Air Max</h2> 
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i5.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                <h2 class="font-medium group-hover:text-lg">Dunk</h2>                   
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i6.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                <h2 class="font-medium group-hover:text-lg">Nike Blazer</h2>
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i7.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">
+                <h2 class="font-medium group-hover:text-lg">Metcon</h2>
+            </div>
+            <div class="group hover:cursor-pointer ">
+                <img loading="lazy" src="./Assets/images/scroll-bar-shooes/i8.jpg" class="h-64 object-contain object-center shrink-0 group-hover:shadow-[0px_4px_16px_rgba(17,17,26,0.1),_0px_8px_24px_rgba(17,17,26,0.1),_0px_16px_56px_rgba(17,17,26,0.1)]" alt="#">       
+                <h2 class="font-medium group-hover:text-lg">Pegasus Running Shoes</h2>
+            </div>
+        </div>
+    </div>
+    <div class="w-full mt-14">
+        <h2 class="font-medium text-2xl tracking-tighter px-6 mb-6 lg:pl-10 lg:font-bold">Don't Miss</h2>
+        <video src="./Assets/videos/v1.mp4" loop autoplay muted ></video>
+    </div>     
+    <div class=" mb-10 w-full px-6 text-left spacing-y-4 flex flex-col justify-between md:text-center">
+        <div class="mt-6"> 
+            <h2 class="text-lg font-medium md:mb-2">Nike Force 1 Low EaseyOn</h2>
+            <h1 class="font-extrabold text-[2.5rem] tracking-tighter leading-10 lg:text-[4.6rem]">NIKE EASYON AND GO</h1>
+        </div>
+            <p class="text-lg mt-6 mb-6">Nike EaseOn-Designed to put on and get going.</p>
+            <button class="bg-black text-white font-medium py-2 rounded-full w-[40%] hover:bg-gray-800 md:w-[10%] md:self-center sm:w-32">Shop</button>
+        </div>
+    </div>
+    <h2 class="font-medium text-2xl tracking-tighter px-6 mb-6 lg:pl-10 lg:font-bold">Shop by Sport</h2>
+    <div class="w-full mt-14 lg:px-10 lg:justify-between pl-8 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
+        <div class="flex lg:flex-col w-[90%] md:w-[33%] self-center py-4 lg:py-4 lg:px-2 lg:w-auto px-6 mt-4 rounded-lg hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:items-center sm:justify-center sm:w-96">
+            <div class="sm:mr-8">
+                <h3>Nike Basketball</h3>
+                <h2 class="font-medium text-lg">Styles made for your game.</h2>
+            </div>
+            <img src="./Assets/images/bottom-sccroll/img1.jpg" class="h-28 lg:h-64 w-28 lg:w-64 object-center object-cover rounded-lg" alt="">
+        </div>
+        <div class="flex lg:flex-col w-[90%]  md:w-[33%] self-center py-4 lg:py-4 lg:px-2 lg:w-auto px-6 mt-4 rounded-lg hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:items-center sm:justify-center sm:w-96">
+            <div class="sm:mr-8">
+                <h3>Nike Golf</h3>
+                <h2 class="font-medium text-lg">Styles made for your game.</h2>
+            </div>
+            <img src="./Assets/images/bottom-sccroll/img2.jpg" class="h-28  lg:h-64 w-28 lg:w-64  object-center object-cover rounded-lg" alt="">
+        </div>
+        <div class="flex lg:flex-col w-[90%]  md:w-[33%] self-center py-4 lg:py-4 lg:px-2 lg:w-auto px-6 mt-4 rounded-lg hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:items-center sm:justify-center sm:w-96">
+            <div class="sm:mr-8">
+                <h3>Nike Running</h3>
+                <h2 class="font-medium text-lg">Styles made for your game.</h2>
+            </div>
+            <img src="./Assets/images/bottom-sccroll/img3.jpg" class="h-28  lg:h-64 w-28 lg:w-64  object-center object-cover rounded-lg" alt="">
+        </div>
+        <div class="flex lg:flex-col w-[90%] md:w-[33%] self-center py-4 lg:py-4 lg:px-2 lg:w-auto px-6 mt-4 rounded-lg hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:items-center sm:justify-center sm:w-96">
+            <div class="sm:mr-8">
+                <h3>Nike Tennis</h3>
+                <h2 class="font-medium text-lg">Styles made for your game.</h2>
+            </div>
+            <img src="./Assets/images/bottom-sccroll/img4.jpg" class="h-28  lg:h-64 w-28 lg:w-64 object-center object-cover rounded-lg" alt="">
+        </div>
+        <div class="flex lg:flex-col w-[90%] md:w-[33%] self-center py-4 lg:py-4 lg:px-2 lg:w-auto px-6 mt-4 rounded-lg hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] sm:items-center sm:justify-center sm:w-96">
+            <div class="sm:mr-8">
+                <h3>Nike Football</h3>
+                <h2 class="font-medium text-lg">Styles made for your game.</h2>
+            </div>
+            <img src="./Assets/images/bottom-sccroll/img5.jpg" class="h-28  lg:h-64 w-28 lg:w-64  object-center object-cover rounded-lg" alt="">
+        </div>
+    </div>   
+    <div class="flex flex-col sm:flex-row sm:space-x-5 sm:px-10 gap-6 mt-10 md:mb-6 px-6 ">
+        <a class="hover:text-lg font-medium" href="">Icons</a>
+        <a class="hover:text-lg font-medium" href="">Shoes</a>
+        <a class="hover:text-lg font-medium" href="">Cloothing</a>
+        <a class="hover:text-lg font-medium" href="">Kid's</a>
+    </div>
+    <footer class="bg-black pb-8">
+        <div class="md:flex items-center justify-between ">
+            <div class="flex flex-col lg:w-[20%]  mt-10 px-6 py-4 gap-2 border-b border-gray-600 sm:flex-row sm:justify-between ">
+                <a class="font-medium text-white" href="">FIND A STORE</a>
+                <a class=" font-medium text-white" href="">BECOME A MEMBER</a>
+                <a class=" font-medium text-white" href="">Send Us Feedbacck</a>
+            </div>
+            <div class=" lg:flex md:border-b border-gray-600 lg:pb-20 lg:mt-5 md:mt-14 md:pb-4">
+                <div class="flex px-6 py-2 items-center justify-between sm:hover:bg-gray-900">
+                    <a class="font-medium text-white" href="">GET HELP</a>
+                    <a class="font-medium text-lg text-white md:hidden" href="">+</a>
+                </div>
+                <div class="flex px-6 py-2 items-center justify-between sm:hover:bg-gray-900">
+                    <a class="font-medium text-white" href="">ABOUT NIKE</a>
+                    <a class="font-medium text-lg text-white md:hidden" href="">+</a>
+                </div>
+            </div>
+            <div class="flex mt-6 mb-4 px-6 gap-4 md:border-b border-gray-600 lg:pb-20 md:pb-12 lg:mt-8 md:mt-16 sm:justify-center">
+                <i class="ri-twitter-fill rounded-full text-2xl md:text-lg px-2 py-1 bg-gray-500"></i>
+                <i class="ri-facebook-fill rounded-full text-2xl md:text-lg px-2 py-1 bg-gray-500"></i>
+                <i class="ri-youtube-fill rounded-full text-2xl md:text-lg px-2 py-1 bg-gray-500"></i>
+                <i class="ri-instagram-fill rounded-full text-2xl md:text-lg px-2 py-1 bg-gray-500"></i>
+            </div>
+        </div>
+        <div class="px-6 sm:mt-6 sm:text-center ">
+            <h4 class="text-white text-sm"><span><i class="ri-map-pin-2-fill text-white"></i></span>India</h4>
+            <h4 class="text-gray-500 text-sm"><span><i class="ri-copyright-line"></i></span>2023 Nike ,Inc. All Rights Reserved</h4>
+        </div>
+        <div class="flex flex-col gap-6 mt-8 px-6 sm:flex-row sm:justify-center">
+            <a class="hover:text-white text-sm text-gray-500" href="">Guides</a>
+            <a class="hover:text-white text-sm text-gray-500" href="">Terms of Sale</a>
+            <a class="hover:text-white text-sm text-gray-500" href="">Terms of Use</a>
+            <a class="hover:text-white text-sm text-gray-500" href="">Nike Privacy Polycy</a>
+        </div>
+    </footer>
+</body>
+</html>
